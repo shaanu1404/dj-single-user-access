@@ -1,0 +1,16 @@
+<h1>Home page</h1>
+
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, iste? Sint quia deserunt veniam? Non, perferendis deserunt. Veniam minus nam sunt obcaecati minima fugiat molestiae blanditiis delectus. Voluptate blanditiis eligendi, eveniet, expedita minus quos, voluptatum ut harum illum error corporis.</p>
+
+<a href="/about">about us</a>
+<a href="/auth/login">login</a>
+
+{% if request.user.is_authenticated %}
+
+<p>Logged in user: {{ request.user }}</p>
+
+{% else %}
+
+<p>User not logged in</p>
+
+{% endif %}
